@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,800;1,200;1,300;1,400;1,500&display=swap');
+
+$secondary:#3f51b5;
+
+body
+{
+    background-color: #FFF;
+    overflow-x: hidden;
+}
+
+//header and Sidebar Dashboard Designs//
+
+
+.Login-box
+{
+    transform: translate(-101px, 1px);
+ .circle
+{
+    background-color: #FFF;
+    height: 40px;
+    width: 40px;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 24px;
+}
+}
+
+
+
+.logo-text
+{
+    margin-left: 10rem;
+}
+
+.side-bar
+{
+    position: fixed;
+    height: 1000px;
+    width: 179px;
+    background-color: #FFF;
+    z-index: 9999;
+    font-family: 'Lato', sans-serif;
+ .sidebar-header
+    {
+        background-color: #2b3540db;
+        padding: 20px;
+        font-family: 'Lato', sans-serif;
+    }
+
+  .menu-items
+  {
+    display: block;
+    text-align: center;
+    color: #c1c1c1;
+    font-size: 17px;
+    line-height: 36px;
+    font-family: 'Lato', sans-serif;
+  }
+  .menu-items
+  {
+    li
+    {
+        list-style-type: none;
+    }
+  }
+
+  .nav-link:hover
+  {
+    background-color: #3a3d40;
+  }
+
+}
+
+.list-group-flush
+{
+  line-height: 66px;
+  .list-group-item:nth-child(even)
+  {
+    background-color: #dce3e954;
+    font-family: 'Lato', sans-serif;
+  }
+}
+
+
+//Dashboard design Ends//
+
+
+//Revenue panel page design begins//
+
+.table-cards
+{
+  border-left: 5px solid #3f51b5 !important;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  background: #f9faff;
+  label
+  {
+      font-weight: 600;
+  }
+
+  .bg-primary
+  {
+    background-color: $secondary!important;
+    border: 1px solid!important;
+    color: #FFF;
+    text-align: center;
+    font-size: 25px;
+  }
+
+}
+
+.btn-primary
+{
+  background-color: $secondary!important;
+  border: $secondary!important;
+}
+//Revenue panel page design Ends//
+
+
+//Login page design Starts//
+
+.body
+{
+  background:url('../images/login-bg.png');
+  height: 100vh;
+}
+
+
+//Employee Detail page design Starts//
+.form-box
+{
+
+  background-color: #f9faff;
+  width: 100%;
+  padding: 30px;
+  height: auto;
+  margin-top: 10rem;
+  .card-header
+  {
+    background-color: $secondary!important;
+  
+  }
+
+  .btn-primary
+  {
+    background-color:$secondary!important;
+    border:1px solid $secondary!important;  
+    width: 120px;
+    font-family: 'Lato', sans-serif;
+  }
+
+  .btn-primary:hover
+  {
+    background-color: #2e3e96!important;
+  }
+}
+
+thead
+{
+  background: #a2b0ff!important;
+  color: #FFF;
+}
+
+
+.table-container
+{
+  width: 100%;
+  background-color: #FFFF;
+  height: auto;
+  padding: 20px;
+  .fa-pen
+  {
+    color: #2e3e96!important;
+  }
+
+  .child-thead
+  {
+    background: #b4b4b4!important;
+    color: #3a3d40!important;
+  }
+}
+
+//timesheet//
+
+.timesheet-section
+{
+  .card-header
+  {
+    background-color: $secondary!important;
+  
+  }
+
+  margin-top:6rem!important;
+}

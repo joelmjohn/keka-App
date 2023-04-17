@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Time Sheet</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark shadow-sm p-4 mb-2 bg-dark fixed-top">
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="list-item">
+                    <a href="http://" class="navbar-brand logo-text">Welcome To Keka</a>
+                </li>
+            </ul>
+
+            <div class="Login-box">
+                <div class="dropdown">
+                    <button type="button" class="circle" data-bs-toggle="dropdown">
+                        <p>K</p>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-lock"></i>Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="row">
+        <div class="col-md-2 col-lg-2 col-xl-2 col-xxl-2 col-sm-12 col-xs-12">
+            <div class="side-bar bg-dark">
+                <div class="sidebar-header">
+                    <h5 class="text-white mt-2">Keka Business</h5>
+                </div>
+
+                <div class="menu-items mt-5">
+                    <div class="rev-menu mt-3">
+                        <li class="list-item">
+                            <a href="http://127.0.0.1:5500/revenue-panel.html" class="nav-link">
+                                <i class="fa-sharp fa-solid fa-money-bills"></i><br>
+                                Revenue Panel
+                            </a>
+                        </li>
+                    </div>
+
+                    <hr>
+                    <div class="emp-menu mt-3">
+                        <li class="list-item">
+                            <a href="http://127.0.0.1:5500/employees.html" class="nav-link">
+                                <i class="fa-solid fa-users"></i><br>
+                                Employee
+                            </a>
+                        </li>
+                    </div>
+
+                    <hr>
+                    <div class="emp-details mt-3">
+                        <li class="list-item">
+                            <a href="http://127.0.0.1:5500/employee-details.html" class="nav-link">
+                                <i class="fa-solid fa-users"></i><br>
+                                Employee Details
+                            </a>
+                        </li>
+                    </div>
+                    <hr>
+                    <div class="dash-menu mt-3">
+                        <li class="list-item">
+                            <a href="http://127.0.0.1:5500/dashboard.html" class="nav-link">
+                                <i class="fa-sharp fa-solid fa-chart-pie"></i><br>
+                                Dashboard
+                            </a>
+                        </li>
+                    </div>
+
+
+                    <hr>
+                    <div class="user-menu mt-3">
+                        <li class="list-item">
+                            <a href="http://127.0.0.1:5500/users.html" class="nav-link">
+                                <i class="fa-solid fa-users"></i><br>
+                                Users
+                            </a>
+                        </li>
+                    </div>
+
+
+                    <hr>
+                    <div class="wallet-menu mt-3">
+                        <li class="list-item">
+                            <a href="http://127.0.0.1:5500/employee-wallet.html" class="nav-link">
+                                <i class="fa-solid fa-wallet"></i><br>
+                                Employee Wallet
+                            </a>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="col-md-9 col-lg-9 col-xxl-9 col-xl-9 col-sm-12 col-xs-12 mt-5">
+            <section class="timesheet-section">
+                <div class="card mt-5">
+                    <div class="card-header">
+                        <h5 class="text-left fw-bold text-white"><i class="fa-sharp fa-solid fa-timeline"></i> Time Sheet</h5>
+                    </div>
+                       <div class="card-body p-3">
+                        <div class="row">
+                            <div class="col-md-12 col-lg-4 col-xl-4 col-xxl-4 col-sm-12 mt-3">
+                                <label for="" class="text-dark">Date</label>
+                                <input type="date" name="" id="" class="form-control mt-2">
+                            </div>
+                            <div class="col-md-12 col-lg-4 col-xl-4 col-xxl-4 col-sm-12 mt-3">
+                                <label for="" class="text-dark">Project</label>
+                                <select name="" id="" class="form-select mt-2">
+                                    <option value="">SwitchCodes</option>
+                                    <option value="">GS1</option>
+                                </select>
+                            </div>
+    
+                            <div class="col-md-12 col-lg-4 col-xl-4 col-xxl-4 col-sm-12 mt-3">
+                                <label for="" class="text-dark">Client</label>
+                                <select name="" id="" class="form-select mt-2">
+                                    <option value="">SwitchCodes</option>
+                                    <option value="">GS1</option>
+                                </select>
+                            </div>
+
+
+                            <div class="col-md-12 col-lg-4 col-xl-4 col-xxl-4 col-sm-12 mt-3">
+                                <label for="" class="text-dark">Status</label>
+                                <select name="" id="" class="form-select mt-2">
+                                    <option value="">On Progress</option>
+                                    <option value="">Completed</option>
+                                    <option value="">In Completed</option>
+                                </select>
+                            </div>
+
+
+                            <div class="col-md-12 col-lg-4 col-xl-4 col-xxl-4 col-sm-12 mt-3">
+                                <label for="" class="text-dark">Productive Hours</label>
+                                <input type="text" name="" id="" class="form-control mt-2" placeholder="Enter Productive Hours">
+                            </div>
+
+                            <div class="col-md-12 col-lg-4 col-xl-4 col-xxl-4 col-sm-12 mt-3">
+                                <label for="" class="text-dark">Billable Hours</label>
+                                <input type="text" name="" id="" class="form-control mt-2" placeholder="Enter Billable Hours">
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-md-12 col-lg-12 col-xxl-12 col-xl-12 mt-3">
+                                <label for="" class="text-dark">Comment</label>
+                                <textarea name="" id="" cols="10" rows="4" class="form-control mt-2"
+                                    placeholder="Comment"></textarea>
+                                <button type="button" class="btn btn-primary mt-4">Submit</button>
+                            </div>
+                        </div>
+                       </div>
+                </div>
+            </section>
+            
+            <div class="table-responsive mt-5">
+                 <table class="table table-bordered table-striped">
+                    <thead>
+                       <tr>
+                        <th>Date</th>
+                        <th>Project</th>
+                        <th>Client</th>
+                        <th>Productive Hours</th>
+                        <th>Billable Hours</th>
+                        <th>Status</th>
+                        <th>Comments</th>
+                        <th>Action</th>
+                       </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>
+                                <input type="date" class="form-control mt-2">
+                            </td>
+
+                            <td>
+                                <select name="" id="" class="form-select mt-2">
+                                    <option value="">SwitchCodes</option>
+                                    <option value="">GS1</option>
+                                </select>
+                            </td>
+
+                            <td>
+                                <select name="" id="" class="form-select mt-2">
+                                    <option value="">SwitchCodes</option>
+                                    <option value="">GS1</option>
+                                </select>
+                            </td>
+
+                            <td>
+                                <input type="text" name="" id="" class="form-control mt-2" value="40">
+                            </td>
+
+                            <td>
+                                <input type="text" name="" id="" class="form-control mt-2" value="40">
+                            </td>
+
+                            <td>
+                                <select name="" id="" class="form-select mt-2">
+                                    <option value="">On Progress</option>
+                                    <option value="">Completed</option>
+                                    <option value="">In Completed</option>
+                                </select>
+                            </td>
+
+                            <td>
+                                <textarea name="" id="" cols="15" rows="3" class="form-control" value=""></textarea>
+                            </td>
+
+                            <td><button type="button" class="btn btn-primary mt-2">Save</button></td>
+                        </tr>
+
+
+                        <tr>
+                            <td>
+                                <input type="date" class="form-control mt-2">
+                            </td>
+
+                            <td>
+                                <select name="" id="" class="form-select mt-2">
+                                    <option value="">SwitchCodes</option>
+                                    <option value="">GS1</option>
+                                </select>
+                            </td>
+
+                            <td>
+                                <select name="" id="" class="form-select mt-2">
+                                    <option value="">SwitchCodes</option>
+                                    <option value="">GS1</option>
+                                </select>
+                            </td>
+
+                            <td>
+                                <input type="text" name="" id="" class="form-control mt-2" value="40">
+                            </td>
+
+                            <td>
+                                <input type="text" name="" id="" class="form-control mt-2" value="40">
+                            </td>
+
+                            <td>
+                                <select name="" id="" class="form-select mt-2">
+                                    <option value="">On Progress</option>
+                                    <option value="">Completed</option>
+                                    <option value="">In Completed</option>
+                                </select>
+                            </td>
+
+                            <td>
+                                <textarea name="" id="" cols="15" rows="3" class="form-control" value=""></textarea>
+                            </td>
+
+                            <td><button type="button" class="btn btn-primary mt-2">Save</button></td>
+                        </tr>
+                    </tbody>
+                 </table>
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Employee Data</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark shadow-sm p-4 mb-2 bg-dark fixed-top">
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="list-item">
+                    <a href="http://" class="navbar-brand logo-text">Welcome To Keka</a>
+                </li>
+            </ul>
+
+            <div class="Login-box">
+                <div class="dropdown">
+                    <button type="button" class="circle" data-bs-toggle="dropdown">
+                        <p>K</p>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-lock"></i> Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+
+
+    <div class="row">
+        <div class="col-md-2 col-lg-2 col-xl-2 col-xxl-2 col-sm-12 col-xs-12">
+            <div class="side-bar bg-dark">
+                <div class="sidebar-header">
+                    <h5 class="text-white mt-2">Keka Business</h5>
+                </div>
+
+                <div class="menu-items mt-5">
+                    <div class="rev-menu mt-3">
+                        <li class="list-item">
+                            <a href="http://127.0.0.1:5500/revenue-panel.html" class="nav-link">
+                                <i class="fa-sharp fa-solid fa-money-bills"></i><br>
+                                Revenue Panel
+                            </a>
+                        </li>
+                    </div>
+
+                    <hr>
+                    <div class="emp-menu mt-3">
+                        <li class="list-item">
+                            <a href="http://127.0.0.1:5500/employees.html" class="nav-link">
+                                <i class="fa-solid fa-users"></i><br>
+                                Employee
+                            </a>
+                        </li>
+                    </div>
+                    <hr>
+                    <div class="emp-details mt-3">
+                        <li class="list-item">
+                            <a href="http://127.0.0.1:5500/employee-details.html" class="nav-link">
+                                <i class="fa-solid fa-users"></i><br>
+                                Employee Details
+                            </a>
+                        </li>
+                    </div>
+                    <hr>
+                    <div class="dash-menu mt-3">
+                        <li class="list-item">
+                            <a href="http://127.0.0.1:5500/dashboard.html" class="nav-link">
+                                <i class="fa-sharp fa-solid fa-chart-pie"></i><br>
+                                Dashboard
+                            </a>
+                        </li>
+                    </div>
+
+
+                    <hr>
+                    <div class="user-menu mt-3">
+                        <li class="list-item">
+                            <a href="http://127.0.0.1:5500/users.html" class="nav-link">
+                                <i class="fa-solid fa-users"></i><br>
+                                Users
+                            </a>
+                        </li>
+                    </div>
+
+
+                    <hr>
+                    <div class="wallet-menu mt-3">
+                        <li class="list-item">
+                            <a href="http://127.0.0.1:5500/employee-wallet.html" class="nav-link">
+                                <i class="fa-solid fa-wallet"></i><br>
+                                Employee Wallet
+                            </a>
+                        </li>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-md-9 col-lg-9 col-xxl-9 col-xl-9 col-sm-12">
+            <div class="form-box">
+                <h4 class="title-text fw-bold">Filter Revenue Details</h4>
+                <div class="row">
+                    <div class="col-md-6 col-lg-2 col-xxl-2 col-xl-2 mt-3">
+                        <label for="" class="text-dark">Department</label>
+                        <select name="" id="" class="form-select mt-2">
+                            <option value="">Javascript</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-6 col-lg-2 col-xxl-2 col-xl-2 mt-3">
+                        <label for="" class="text-dark">Week</label>
+                        <input type="week" name="" id="" class="form-control mt-2" placeholder="Week">
+                    </div>
+
+                     <div class="col-md-6 col-lg-2 col-xxl-2 col-xl-2 mt-3">
+                        <label for="" class="text-dark">Year</label>
+                        <input type="month" name="" id="" class="form-control mt-2">
+                    </div> 
+
+                    <!-- <div class="col-md-6 col-lg-2 col-xxl-2 col-xl-2 mt-3">
+                        <label for="" class="text-dark">To Date</label>
+                        <input type="date" name="" id="" class="form-control mt-2">
+                    </div> -->
+
+                    <div class="col-md-6 col-lg-2 col-xxl-2 col-xl-2 mt-3">
+                        <label for="" class="text-dark">Resources</label>
+                        <select name="" id="" class="form-select mt-2">
+                            <option value="">Vishal P S</option>
+                            <option value="">Nikky Anna Abraham</option>
+                        </select>
+                    </div>
+
+
+
+                    <div class="col-md-6 col-lg-2 col-xxl-2 col-xl-2 mt-3">
+                        <label for="" class="text-dark">Project</label>
+                        <select name="" id="" class="form-select mt-2">
+                            <option value="">SwitchCodes</option>
+                            <option value="">GS1</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-6 col-lg-2 col-xxl-2 col-xl-2 mt-3">
+                        <label for="" class="text-dark">Client</label>
+                        <select name="" id="" class="form-select mt-2">
+                            <option value="">SwitchCodes</option>
+                            <option value="">GS1</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-6 col-lg-2 col-xxl-2 col-xl-2">
+                        <button type="button" class="btn btn-primary mt-4">Submit</button>
+                    </div>
+
+
+
+                  
+
+                    <!-- <div class="col-md-6 col-lg-2 col-xxl-2 col-xl-2 mt-3">
+                        <label for="" class="text-dark">Category</label>
+                        <select name="" id="" class="form-select mt-2">
+                            <option value="">Fixed</option>
+                            <option value="">Hourly</option>
+                        </select>
+                    </div> -->
+
+
+
+
+
+                    <!-- <div class="col-md-6 col-lg-2 col-xxl-2 col-xl-2 mt-3">
+                        <label for="" class="text-dark">Hours Worked</label>
+                        <input type="number" name="" id="" class="form-control mt-2" placeholder="Hours Worked">
+                    </div>
+
+
+                    <div class="col-md-6 col-lg-2 col-xxl-2 col-xl-2 mt-3">
+                        <label for="" class="text-dark">Billable Hours</label>
+                        <input type="number" name="" id="" class="form-control mt-2" placeholder="Billable Hours">
+                    </div>
+
+                    <div class="col-md-6 col-lg-2 col-xxl-2 col-xl-2 mt-3">
+                        <label for="" class="text-dark">Revenue</label>
+                        <input type="text" name="" id="" class="form-control mt-2" placeholder="Revenue">
+                    </div> -->
+
+
+
+                </div>
+
+
+
+
+
+                <!-- <div class="row">
+                    <div class="col-md-12 col-lg-12 col-xxl-12 col-xl-12 mt-3">
+                        <label for="" class="text-dark">Comment</label>
+                        <textarea name="" id="" cols="30" rows="10" class="form-control mt-2"
+                            placeholder="Comment"></textarea>
+                        <button type="button" class="btn btn-primary mt-4">Submit</button>
+                    </div>
+                </div> -->
+            </div>
+
+               <div class="mt-5">
+                <div class="export-btn">
+                    <button type="button" class="btn btn-primary data-export">Export Data</button>                  
+                     </div>
+               </div>
+             
+               <div class="table-responsive mt-3">
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+
+
+                            <th>
+                                Project
+                            </th>
+
+                            <th>
+                                Client
+                            </th>
+
+                            <th>
+                                Category
+                            </th>
+
+
+                            <th>
+                                Resources
+                            </th>
+
+                            <th>
+                                Total Worked Hours
+                            </th>
+
+                            <th>
+                                Total Billable Hours
+                            </th>
+
+
+
+                            <th>
+                                Total Revenue
+                            </th>
+
+
+                            <th>
+                                Comments
+                            </th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+
+                            <td>Wagepoint</td>
+                            <td>Wagepoint</td>
+                            <td>Fixed</td>
+                            <td>Remya Raj</td>
+                            <td>40</td>
+                            <td>0</td>
+                           
+                            <td></td>
+
+                            <td>
+                                <p>
+                                    Change requests from client
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+
+                            <td>Feathersoft</td>
+                            <td>Feathersoft</td>
+                            <td>Fixed</td>
+                            <td>Angitha</td>
+                            <td>40</td>
+                            <td>0</td>
+                          
+
+                            <td></td>
+
+
+                            <td>
+                                <p>
+                                    Automation training
+                                </p>
+                            </td>
+                        </tr>
+
+                        <tr>
+
+                            <td>Feathersoft</td>
+                            <td>Feathersoft</td>
+                            <td>Fixed</td>
+                            <td>Angitha</td>
+                            <td>40</td>
+                            <td>0</td>
+                           
+                            <td></td>
+
+                            <td>
+                                <p>
+                                    Automation training
+                                </p>
+                            </td>
+                        </tr>
+
+
+
+
+                        <tr>
+
+                            <td>Feathersoft</td>
+                            <td>Feathersoft</td>
+                            <td>Fixed</td>
+                            <td>Angitha</td>
+                            <td>40</td>
+                            <td>0</td>
+                           
+                            <td></td>
+
+                            <td>
+                                <p>
+                                    Automation training
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
